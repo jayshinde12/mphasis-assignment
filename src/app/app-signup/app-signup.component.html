@@ -1,0 +1,34 @@
+<div class="container">
+    <h2>mphasis-assignment</h2>
+    <form [formGroup]="signUpForm" (ngSubmit)="onSubmit()">
+      <div class="form-group">
+        <label for="firstName">First Name:</label>
+        <input type="text" class="form-control" formControlName="firstName" required>
+      </div>
+      <div class="form-group">
+        <label for="lastName">Last Name:</label>
+        <input type="text" class="form-control" formControlName="lastName" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" class="form-control" formControlName="email" required>
+        <div *ngIf="signUpForm.controls['email'].invalid && signUpForm.controls['email'].touched" class="text-danger">
+          Please enter a valid email address
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" class="form-control" formControlName="password" required>
+        <div *ngIf="signUpForm.get('password')?.errors && signUpForm.get('password')?.touched" class="text-danger">
+            <span *ngIf="signUpForm.get('password')?.hasError('required')">Password is required.</span>
+            <span *ngIf="signUpForm.get('password')?.hasError('minlength')">Password should be a minimum of eight characters.</span>
+            <span *ngIf="signUpForm.get('password')?.hasError('letters')">Password should contain both lower and uppercase letters.</span>
+            <span *ngIf="signUpForm.get('password')?.hasError('containsFirstName')">Password should not contain your first name.</span>
+            <span *ngIf="signUpForm.get('password')?.hasError('containsLastName')">Password should not contain your last name.</span>
+          </div>
+      </div>
+      <button type="submit" [disabled]="signUpForm.invalid" class="btn btn-primary mt-3">Submit</button>
+    </form>
+    <div id="fullName">Full Name: {{ fullName }}</div>
+  </div>
+  
