@@ -50,4 +50,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## SCSS Library used
 
-Bootstrap is used as scss library and all the bootstrap classed are used to implement the style.
+Bootstrap is used as scss library and all the bootstrap classes are used to implement the style.
