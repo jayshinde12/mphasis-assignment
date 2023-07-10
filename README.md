@@ -4,33 +4,33 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 # Requirements
 • Build a single page application with a sign-up form.<br>
-• The form should allow users to enter first name, last name, email, and password.
-• All fields are required.
+• The form should allow users to enter first name, last name, email, and password.<br>
+• All fields are required.<br>
 • The full name of the user should be shown in the UI outside of the form. It should use a single variable that is 
-updated whenever the input values are changed.
-• Password validation:
-o Should be a minimum of eight characters
-o Should contain lower and uppercase letters
-o Should not contain the user's first or last name
+updated whenever the input values are changed.<br>
+• Password validation:<br>
+o Should be a minimum of eight characters<br>
+o Should contain lower and uppercase letters<br>
+o Should not contain the user's first or last name<br>
 • Email should be validated but there are various ways of accomplishing this. So, show us what you consider as 
-a proper email validation.
-• When submitting the form, two requests must be made:
-o First request: HTTP GET to https://jsonplaceholder.typicode.com/photos/{last_name_length}
-▪ Example request in case of name "Thomas Shelby": GET /photos/6
-▪ The “thumbnailUrl” parameter from the response needs to be passed to the second request
-o Second request: HTTP POST to https://jsonplaceholder.typicode.com/users
-▪ The POST body includes the form values and the image url from the previous request
-▪ Example request body:
- { 
- "firstName": "Thomas", 
- "lastName": "Shelby", 
- "email": "thomas@shelby.co.uk",
- "thumbnailUrl": "url-from-request-1"
- }
+a proper email validation.<br>
+• When submitting the form, two requests must be made:<br>
+o First request: HTTP GET to https://jsonplaceholder.typicode.com/photos/{last_name_length}<br>
+▪ Example request in case of name "Thomas Shelby": GET /photos/6<br>
+▪ The “thumbnailUrl” parameter from the response needs to be passed to the second request<br>
+o Second request: HTTP POST to https://jsonplaceholder.typicode.com/users<br>
+▪ The POST body includes the form values and the image url from the previous request<br>
+▪ Example request body:<br>
+ { <br>
+ "firstName": "Thomas", <br>
+ "lastName": "Shelby", <br>
+ "email": "thomas@shelby.co.uk",<br>
+ "thumbnailUrl": "url-from-request-1"<br>
+ }<br>
 
 ## Development server
-Clone the repo and install node module using `npm install`.
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Clone the repo and install node module using `npm install`.<br>
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.<br>
 
 ## Build
 
