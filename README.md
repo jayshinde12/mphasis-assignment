@@ -1,9 +1,9 @@
 # MphasisAssignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.0.2.<br>
 
 # Requirements
-• Build a single page application with a sign-up form.
+• Build a single page application with a sign-up form.<br>
 • The form should allow users to enter first name, last name, email, and password.
 • All fields are required.
 • The full name of the user should be shown in the UI outside of the form. It should use a single variable that is 
